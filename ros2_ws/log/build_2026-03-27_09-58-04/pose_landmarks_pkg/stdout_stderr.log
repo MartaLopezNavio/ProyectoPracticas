@@ -1,0 +1,16 @@
+running develop
+/home/marta/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:156: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/home/marta/.local/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating pose_landmarks_pkg.egg-info
+writing manifest file 'pose_landmarks_pkg.egg-info/SOURCES.txt'
+writing manifest file 'pose_landmarks_pkg.egg-info/SOURCES.txt'
+running build_ext
+running install_data
+creating /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index
+creating /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index/resource_index
+creating /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index/resource_index/packages
+copying resource/pose_landmarks_pkg -> /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/pose_landmarks_pkg

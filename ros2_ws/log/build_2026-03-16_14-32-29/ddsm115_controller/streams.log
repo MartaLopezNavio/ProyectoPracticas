@@ -1,0 +1,24 @@
+[1.293s] Invoking command in '/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build --no-deps install_data
+[1.696s] running develop
+[1.699s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.700s]   warnings.warn(
+[1.701s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.701s]   warnings.warn(
+[1.969s] running egg_info
+[1.969s] writing ddsm115_controller.egg-info/PKG-INFO
+[1.969s] writing dependency_links to ddsm115_controller.egg-info/dependency_links.txt
+[1.970s] writing entry points to ddsm115_controller.egg-info/entry_points.txt
+[1.970s] writing requirements to ddsm115_controller.egg-info/requires.txt
+[1.970s] writing top-level names to ddsm115_controller.egg-info/top_level.txt
+[1.972s] reading manifest file 'ddsm115_controller.egg-info/SOURCES.txt'
+[1.973s] writing manifest file 'ddsm115_controller.egg-info/SOURCES.txt'
+[1.975s] running build_ext
+[1.975s] Creating /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115-controller.egg-link (link to .)
+[1.976s] Installing check_motor_id script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.976s] Installing set_motor_id script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.976s] Installing two_wheels_robot script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.976s] Installing velocity_control script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.976s] 
+[1.976s] Installed /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller
+[1.976s] running install_data
+[2.007s] Invoked command in '/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller' returned '0': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build --no-deps install_data

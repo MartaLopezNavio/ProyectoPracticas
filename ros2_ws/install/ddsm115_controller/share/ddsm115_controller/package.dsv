@@ -1,0 +1,9 @@
+source;share/ddsm115_controller/hook/pythonpath.ps1
+source;share/ddsm115_controller/hook/pythonpath.dsv
+source;share/ddsm115_controller/hook/pythonpath.sh
+source;share/ddsm115_controller/hook/ament_prefix_path.ps1
+source;share/ddsm115_controller/hook/ament_prefix_path.dsv
+source;share/ddsm115_controller/hook/ament_prefix_path.sh
+source;../../build/ddsm115_controller/share/ddsm115_controller/hook/pythonpath_develop.ps1
+source;../../build/ddsm115_controller/share/ddsm115_controller/hook/pythonpath_develop.dsv
+source;../../build/ddsm115_controller/share/ddsm115_controller/hook/pythonpath_develop.sh

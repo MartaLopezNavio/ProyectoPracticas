@@ -1,0 +1,4 @@
+[console_scripts]
+compressed_image_node = pose_landmarks_pkg.compressed_image_node:main
+webcam_node = pose_landmarks_pkg.webcam_node:main
+

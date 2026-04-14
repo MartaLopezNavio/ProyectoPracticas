@@ -1,0 +1,52 @@
+[0.642s] Invoking command in '/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build
+[0.886s] running develop
+[0.893s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.893s]   warnings.warn(
+[0.894s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.895s]   warnings.warn(
+[1.080s] Removing /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115-controller.egg-link (link to .)
+[1.105s] Invoked command in '/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller' returned '0': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build
+[1.106s] Invoking command in '/home/marta/Documents/4º/practicas/ros2_ws/src/ddsm115_controller': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ddsm115_controller build --build-base /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build install --record /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/install.log --single-version-externally-managed
+[1.321s] running egg_info
+[1.321s] writing ../../build/ddsm115_controller/ddsm115_controller.egg-info/PKG-INFO
+[1.322s] writing dependency_links to ../../build/ddsm115_controller/ddsm115_controller.egg-info/dependency_links.txt
+[1.322s] writing entry points to ../../build/ddsm115_controller/ddsm115_controller.egg-info/entry_points.txt
+[1.322s] writing requirements to ../../build/ddsm115_controller/ddsm115_controller.egg-info/requires.txt
+[1.322s] writing top-level names to ../../build/ddsm115_controller/ddsm115_controller.egg-info/top_level.txt
+[1.324s] reading manifest file '../../build/ddsm115_controller/ddsm115_controller.egg-info/SOURCES.txt'
+[1.330s] writing manifest file '../../build/ddsm115_controller/ddsm115_controller.egg-info/SOURCES.txt'
+[1.330s] running build
+[1.330s] running build_py
+[1.330s] copying ddsm115_controller/ddsm115.py -> /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller
+[1.330s] copying ddsm115_controller/check_motor_id.py -> /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller
+[1.330s] copying ddsm115_controller/test_ddsm115_raw.py -> /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller
+[1.331s] copying ddsm115_controller/set_motor_id.py -> /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller
+[1.331s] running install
+[1.331s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.331s]   warnings.warn(
+[1.331s] running install_lib
+[1.332s] creating /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/ddsm115.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/check_motor_id.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/two_wheels_robot.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/velocity_control.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/__init__.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/test_ddsm115_raw.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.332s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/set_motor_id.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[1.333s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/ddsm115.py to ddsm115.cpython-310.pyc
+[1.334s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/check_motor_id.py to check_motor_id.cpython-310.pyc
+[1.335s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/two_wheels_robot.py to two_wheels_robot.cpython-310.pyc
+[1.336s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/velocity_control.py to velocity_control.cpython-310.pyc
+[1.337s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/__init__.py to __init__.cpython-310.pyc
+[1.337s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/test_ddsm115_raw.py to test_ddsm115_raw.cpython-310.pyc
+[1.337s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/set_motor_id.py to set_motor_id.cpython-310.pyc
+[1.338s] running install_data
+[1.338s] running install_egg_info
+[1.340s] Copying ../../build/ddsm115_controller/ddsm115_controller.egg-info to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller-0.0.0-py3.10.egg-info
+[1.341s] running install_scripts
+[1.366s] Installing check_motor_id script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.366s] Installing set_motor_id script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.366s] Installing two_wheels_robot script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.366s] Installing velocity_control script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[1.366s] writing list of installed files to '/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/install.log'
+[1.383s] Invoked command in '/home/marta/Documents/4º/practicas/ros2_ws/src/ddsm115_controller' returned '0': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ddsm115_controller build --build-base /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build install --record /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/install.log --single-version-externally-managed

@@ -1,0 +1,29 @@
+[0.718s] Invoking command in '/home/marta/Documents/4º/practicas/ros2_ws/src/ddsm115_controller': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ddsm115_controller build --build-base /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build install --record /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/install.log --single-version-externally-managed
+[0.929s] running egg_info
+[0.929s] writing ../../build/ddsm115_controller/ddsm115_controller.egg-info/PKG-INFO
+[0.929s] writing dependency_links to ../../build/ddsm115_controller/ddsm115_controller.egg-info/dependency_links.txt
+[0.930s] writing entry points to ../../build/ddsm115_controller/ddsm115_controller.egg-info/entry_points.txt
+[0.930s] writing requirements to ../../build/ddsm115_controller/ddsm115_controller.egg-info/requires.txt
+[0.930s] writing top-level names to ../../build/ddsm115_controller/ddsm115_controller.egg-info/top_level.txt
+[0.932s] reading manifest file '../../build/ddsm115_controller/ddsm115_controller.egg-info/SOURCES.txt'
+[0.938s] writing manifest file '../../build/ddsm115_controller/ddsm115_controller.egg-info/SOURCES.txt'
+[0.939s] running build
+[0.939s] running build_py
+[0.939s] copying ddsm115_controller/ddsm115.py -> /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller
+[0.939s] running install
+[0.939s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.939s]   warnings.warn(
+[0.939s] running install_lib
+[0.940s] copying /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build/lib/ddsm115_controller/ddsm115.py -> /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller
+[0.940s] byte-compiling /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller/ddsm115.py to ddsm115.cpython-310.pyc
+[0.942s] running install_data
+[0.942s] running install_egg_info
+[0.944s] removing '/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.944s] Copying ../../build/ddsm115_controller/ddsm115_controller.egg-info to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages/ddsm115_controller-0.0.0-py3.10.egg-info
+[0.945s] running install_scripts
+[0.963s] Installing check_motor_id script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[0.963s] Installing set_motor_id script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[0.963s] Installing two_wheels_robot script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[0.963s] Installing velocity_control script to /home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/ddsm115_controller
+[0.964s] writing list of installed files to '/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/install.log'
+[0.984s] Invoked command in '/home/marta/Documents/4º/practicas/ros2_ws/src/ddsm115_controller' returned '0': PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/ddsm115_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ddsm115_controller build --build-base /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/build install --record /home/marta/Documents/4º/practicas/ros2_ws/build/ddsm115_controller/install.log --single-version-externally-managed

@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+pose_landmarks_pkg/__init__.py
+pose_landmarks_pkg/compressed_image_node.py
+pose_landmarks_pkg/pose_core.py
+pose_landmarks_pkg/webcam_node.py
+pose_landmarks_pkg.egg-info/PKG-INFO
+pose_landmarks_pkg.egg-info/SOURCES.txt
+pose_landmarks_pkg.egg-info/dependency_links.txt
+pose_landmarks_pkg.egg-info/entry_points.txt
+pose_landmarks_pkg.egg-info/requires.txt
+pose_landmarks_pkg.egg-info/top_level.txt
+pose_landmarks_pkg.egg-info/zip-safe
+resource/pose_landmarks_pkg

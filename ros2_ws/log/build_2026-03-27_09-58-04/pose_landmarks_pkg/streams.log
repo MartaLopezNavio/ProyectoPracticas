@@ -1,0 +1,18 @@
+[0.787s] Invoking command in '/home/marta/Documents/4º/practicas/ros2_ws/build/pose_landmarks_pkg': CONDA_PROMPT_MODIFIER=(openmmlab) PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/pose_landmarks_pkg/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/marta/Documents/4º/practicas/ros2_ws/build/pose_landmarks_pkg/build --no-deps install_data
+[1.046s] running develop
+[1.054s] /home/marta/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:156: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.054s]   warnings.warn(
+[1.056s] /home/marta/.local/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.056s]   warnings.warn(
+[1.250s] running egg_info
+[1.250s] creating pose_landmarks_pkg.egg-info
+[1.251s] writing manifest file 'pose_landmarks_pkg.egg-info/SOURCES.txt'
+[1.253s] writing manifest file 'pose_landmarks_pkg.egg-info/SOURCES.txt'
+[1.254s] running build_ext
+[1.256s] running install_data
+[1.256s] creating /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index
+[1.256s] creating /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index/resource_index
+[1.256s] creating /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index/resource_index/packages
+[1.256s] copying resource/pose_landmarks_pkg -> /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/ament_index/resource_index/packages
+[1.256s] copying package.xml -> /home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/share/pose_landmarks_pkg
+[1.289s] Invoked command in '/home/marta/Documents/4º/practicas/ros2_ws/build/pose_landmarks_pkg' returned '0': CONDA_PROMPT_MODIFIER=(openmmlab) PYTHONPATH=/home/marta/Documents/4º/practicas/ros2_ws/build/pose_landmarks_pkg/prefix_override:/home/marta/Documents/4º/practicas/ros2_ws/install/pose_landmarks_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/marta/Documents/4º/practicas/ros2_ws/build/pose_landmarks_pkg/build --no-deps install_data
