@@ -1,8 +1,0 @@
-[console_scripts]
-check_motor_id = ddsm115_controller.check_motor_id:main
-robot_motor_server = ddsm115_controller.robot_motor_server:main
-robot_web_server = ddsm115_controller.robot_web_server:main
-set_motor_id = ddsm115_controller.set_motor_id:main
-two_wheels_robot = ddsm115_controller.two_wheels_robot:main
-velocity_control = ddsm115_controller.velocity_control:main
-
