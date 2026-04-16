@@ -51,7 +51,8 @@ The vision subsystem is responsible for:
 
 - receiving image frames from a mobile application,
 - running RTMPose inference,
-- computing approximate external anatomical landmarks,
+- extrating human pose keypoints,
+- computing approximate external anatomical landmarks from those keypoints,
 - exporting results as image + JSON,
 - publishing them through ROS2 topics.
 

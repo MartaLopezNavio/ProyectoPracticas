@@ -174,3 +174,7 @@ You can use rqt_robot_steering to manually drive robot OR you can use ros2 run j
 
 You can change a parameter of wheel_base to match with your robot wheel's base.
 
+## Author
+
+Marta López Navio
+
