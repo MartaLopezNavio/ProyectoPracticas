@@ -12,12 +12,12 @@ LATEST_FRAME_PATH = os.path.join(OUTPUT_DIR, "latest_frame.jpg")
 LATEST_LANDMARKS_PATH = os.path.join(OUTPUT_DIR, "latest_landmarks.json")
 
 app = Flask(__name__)
-engine = LandmarksEngine(device="cuda:0", thr=0.3)
+engine = LandmarksEngine(device="cuda:0", thr=0.3, face_thr=0.5)
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
-def save_landmarks_json(landmarks, keypoints, scores, orientation):
+def save_landmarks_json(landmarks, keypoints, scores, orientation, orientation_debug=None):
     def point_or_none(p):
         if p is None:
             return None
@@ -34,7 +34,8 @@ def save_landmarks_json(landmarks, keypoints, scores, orientation):
         "pelvis": None,
         "thyroid": None,
         "prostate": None,
-        "keypoints": []
+        "keypoints": [],
+        "orientation_debug": orientation_debug if orientation_debug is not None else {}
     }
 
     if landmarks is not None:
@@ -77,17 +78,25 @@ def upload_frame():
         landmarks = result["landmarks"]
         keypoints = result["keypoints"]
         scores = result["scores"]
-        orientation = result.get("orientation", "unknown")
+        orientation = result.get("orientation", "not_front")
+        orientation_debug = result.get("orientation_debug", {})
 
         cv2.imwrite(LATEST_FRAME_PATH, final_img)
-        save_landmarks_json(landmarks, keypoints, scores, orientation)
+        save_landmarks_json(
+            landmarks,
+            keypoints,
+            scores,
+            orientation,
+            orientation_debug=orientation_debug
+        )
 
         return jsonify({
             "ok": True,
             "orientation": orientation,
             "measurement_allowed": bool(
                 landmarks.get("measurement_allowed", False)
-            ) if landmarks is not None else False
+            ) if landmarks is not None else False,
+            "orientation_debug": orientation_debug
         })
 
     except Exception as e:
@@ -148,12 +157,15 @@ def stream():
         mjpeg_generator(),
         mimetype="multipart/x-mixed-replace; boundary=frame"
     )
+
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({
         "ok": True,
         "service": "mobile_pose_server"
     })
+
 
 if __name__ == "__main__":
     start_discovery_server()
