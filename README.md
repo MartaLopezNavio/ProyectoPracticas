@@ -53,7 +53,6 @@ válida, el comportamiento seguro es detener el robot.
 ```text
 .
 ├── README.md
-├── INSTRUCCIONES_ACTUALIZACION.md
 ├── CITATION.cff
 ├── LICENSE
 ├── scripts_principales/
@@ -78,19 +77,14 @@ válida, el comportamiento seguro es detener el robot.
 │   └── referencia/
 ├── app_android/
 │   ├── README.md
-│   └── <proyecto_android_studio>/
+│   └── aplicacion_android_studio/
 ├── videos/
 ├── documentacion/
 │   └── Memoria_TFG_Marta_Lopez_Navio.pdf
 ├── herramientas/
 │   └── verificar_repositorio.py
-├── mobile_output/
-└── legacy_practicas/          # opcional: fase anterior de prácticas
+└── mobile_output/
 ```
-
-El repositorio original contenía `RTMPose/` y `ros2_ws/`. Esas carpetas pueden conservarse en
-`legacy_practicas/` para mantener la trazabilidad de la fase de prácticas. La implementación final
-descrita en la memoria está en `scripts_principales/`.
 
 ## Scripts principales
 
