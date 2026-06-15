@@ -1,0 +1,6 @@
+name: depth3
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - faiss-cpu

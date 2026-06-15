@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TELEROBOT</title>
+
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 20px;
+              text-align: center;
+            }
+
+            h1 {
+              font-size: 1.4rem;
+              margin-bottom: 15px;
+            }
+
+            #camerainput {
+              max-width: 320px;
+              height: auto;
+              border: 1px solid #ccc;
+              margin: 10px 0;
+            }
+            .btn {
+              display: inline-block;
+              padding: 12px 14px;
+              border: 1px solid #bbb;
+              border-radius: 8px;
+              text-decoration: none;
+              color: #111;
+              background: #f6f6f6;
+              min-width: 110px;
+              user-select: none;
+            }
+
+            .btn:active {
+              transform: translateY(1px);
+            }
+
+
+            .controls {
+              width: 100%;
+              max-width: 520px;
+              margin: 10px auto 15px auto;
+              border-collapse: separate;
+              border-spacing: 10px;
+            }
+
+            .controls td {
+              width: 33.33%;
+            }
+
+            /* Botones “grandes” (Forward/Backward) */
+            .btn-big {
+              padding: 16px 14px;
+              min-width: 130px;
+              font-weight: 600;
+            }
+
+            form {
+              margin-top: 12px;
+            }
+
+            input[type="text"] {
+              padding: 8px;
+              width: 220px;
+              max-width: 70vw;
+            }
+
+            input[type="submit"] {
+              padding: 8px 12px;
+              margin-left: 6px;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function timedRefresh() {
+              var objectToBeRefreshed = document.getElementById("camerainput");
+              if (objectToBeRefreshed) {
+                objectToBeRefreshed.src = "camera.jpg?rand=" + Math.random();
+              }
+              setTimeout(timedRefresh, 1000);
+            }
+        </script>
+    </head>
+
+    <body onload="timedRefresh();">
+        <h1>TELEROBOT</h1>
+
+        <img src="camera.jpg" id="camerainput" alt="Webcam del robot" />
+
+        <!-- Controles (3 columnas como en Android) -->
+        <table class="controls" aria-label="Controles del robot">
+            <tr>
+                <td><a class="btn" href="/turnleft">Turn left</a></td>
+                <td><a class="btn" href="/forward">Forward</a></td>
+                <td><a class="btn" href="/turnright">Turn right</a></td>
+            </tr>
+
+            <tr>
+                <td><a class="btn" href="/left">Left</a></td>
+                <td><a class="btn" href="/stop">Stop</a></td>
+                <td><a class="btn" href="/right">Right</a></td>
+            </tr>
+
+            <tr>
+                <td><a class="btn" href="/speedup">Speed +</a></td>
+                <td><a class="btn" href="/backward">Backward</a></td>
+                <td><a class="btn" href="/speeddown">Speed -</a></td>
+            </tr>
+        </table>
+
+        <form name="input" action="/message" method="get">
+            SHOW MESSAGE:
+            <input type="text" name="text" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

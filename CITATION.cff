@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Si utiliza este material, cite el Trabajo Final de Grado y este repositorio."
+title: "Prelocalización anatómica externa en entornos hospitalarios mediante estimación de pose humana y visión artificial"
+type: software
+authors:
+  - family-names: "López Navio"
+    given-names: "Marta"
+date-released: 2026-06-12
+repository-code: "https://github.com/MartaLopezNavio/ProyectoPracticas"
+abstract: >-
+  Material de implementación y experimentación de una arquitectura de percepción,
+  decisión y actuación para el posicionamiento de un robot móvil mediante RTMPose,
+  landmarks anatómicos externos, Depth Anything 3 y ROS2.
+keywords:
+  - robotics
+  - human pose estimation
+  - RTMPose
+  - Depth Anything 3
+  - ROS2
+  - RealSense

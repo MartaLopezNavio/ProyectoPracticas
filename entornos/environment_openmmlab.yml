@@ -1,0 +1,8 @@
+name: openmmlab
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pytorch-cuda=12.1
+  - torchvision=0.16.0
+  - pytorch=2.1.0

@@ -1,0 +1,14 @@
+El sistema ROS2 se ejecutó con ROS2 Humble instalado en Ubuntu.
+
+Los nodos ROS2 se ejecutan con el Python del sistema:
+
+source /opt/ros/humble/setup.bash
+/usr/bin/python3 publish_mobile_pose_topics.py
+/usr/bin/python3 ros2_to_android_bridge.py
+
+Variables utilizadas:
+
+export ROS_LOCALHOST_ONLY=1
+export ROS_DOMAIN_ID=42
+
+No se utilizó Conda para ejecutar los nodos ROS2, para evitar conflictos con las dependencias de OpenMMLab y Depth Anything 3.

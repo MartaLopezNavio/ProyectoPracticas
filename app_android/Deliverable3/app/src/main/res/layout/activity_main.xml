@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/webText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:maxLines="2"
+                android:text="Servidor pose PC"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickConnectButton"
+                android:text="Connect"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/findServerButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Buscar PC"
+                android:textSize="10sp"
+                android:onClick="onClickFindServer" />
+            <Button
+                android:id="@+id/btnCapture"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="captureCamera"
+                android:text="Capture"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/disconnectButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickDisconnectButton"
+                android:text="Disconnect"
+                android:textSize="9sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/turnLeftButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickTurnLeft"
+                android:text="Turn L"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/forwardButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickForwardButton"
+                android:text="Forward"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/turnRightButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickTurnRight"
+                android:text="Turn R"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/leftButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickLeftButton"
+                android:text="Left"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickStopButton"
+                android:text="Stop"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/rightButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickRightButton"
+                android:text="Right"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/increaseSpeed"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickIncreaseSpeed"
+                android:text="Speed +"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/backwardButton"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickBackwardButton"
+                android:text="Backward"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/decreaseSpeed"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="onClickDecreaseSpeed"
+                android:text="Speed -"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="4dp">
+
+            <FrameLayout
+                android:id="@+id/cameraView"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:layout_span="3"
+                android:foregroundGravity="center"
+                android:visibility="visible" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
