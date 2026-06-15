@@ -77,13 +77,13 @@ válida, el comportamiento seguro es detener el robot.
 │   └── referencia/
 ├── app_android/
 │   ├── README.md
-│   └── aplicacion_android_studio/
+│   └── Deliverable3/
 ├── videos/
 ├── documentacion/
 │   └── Memoria_TFG_Marta_Lopez_Navio.pdf
 ├── herramientas/
 │   └── verificar_repositorio.py
-└── mobile_output/
+└── mobile_output/          # Generada automáticamente durante la ejecución
 ```
 
 ## Scripts principales
@@ -179,6 +179,10 @@ python -m pip install -e .
 El servidor utiliza el modelo `depth-anything/DA3Metric-Large`, descargado mediante
 `DepthAnything3.from_pretrained(...)`.
 
+La primera ejecución requiere conexión a Internet para descargar los pesos del modelo
+`depth-anything/DA3Metric-Large`. En las ejecuciones posteriores se utiliza la copia almacenada
+en la caché local.
+
 ### 2. Entorno OpenMMLab / RTMPose
 
 ```bash
@@ -260,12 +264,35 @@ export ROS_DOMAIN_ID=42
 /usr/bin/python3 scripts_principales/ros2_to_android_bridge.py
 ```
 
-Antes de ejecutar el sistema completo, instale en el teléfono la aplicación incluida en
-`app_android/`. Para ello, abra el proyecto con Android Studio, conecte el dispositivo Android y
-ejecute la opción **Run** para compilar e instalar la aplicación.
+## Instalación y configuración de la aplicación Android
 
-Una vez instalada, la aplicación debe conectarse a la IP del ordenador y al puerto `9999`. Después
-envía los comandos al MiniCERNBot por Bluetooth.
+Antes de ejecutar el sistema completo, debe instalarse en el teléfono la aplicación incluida en:
+
+```text
+app_android/Deliverable3/
+```
+
+Para ello:
+
+1. Abra la carpeta `app_android/Deliverable3/` con Android Studio.
+2. Conecte el dispositivo Android al ordenador mediante USB.
+3. Active la depuración USB en el dispositivo.
+4. Ejecute la opción **Run** de Android Studio para compilar e instalar la aplicación.
+5. Conecte el teléfono y el ordenador a la misma red WiFi.
+6. Empareje el teléfono con el MiniCERNBot mediante Bluetooth.
+
+La aplicación se comunica con el servidor TCP ejecutado en el ordenador mediante el puerto `9999`.
+Antes de compilarla, revise en `MainActivity.java` la dirección IP configurada para el servidor y
+sustitúyala por la IP actual del ordenador dentro de la red local.
+
+La IP del ordenador puede consultarse en Ubuntu con:
+
+```bash
+hostname -I
+```
+
+Una vez instalada y configurada, la aplicación recibe las acciones generadas por ROS2 mediante
+TCP/WiFi y las reenvía al MiniCERNBot mediante Bluetooth.
 
 ## Topics ROS2
 
